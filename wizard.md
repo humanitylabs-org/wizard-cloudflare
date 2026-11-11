@@ -4,7 +4,7 @@ id: wizard-cloudflare
 name: Cloudflare
 type: external
 category: system
-version: 1.4.5
+version: 1.4.6
 summary: "Sign in to Cloudflare once; your Wizard publishes sites, stores backups and manages domains."
 license: GPL-3.0-only
 source: https://github.com/oscarhenrycollins/wizard-cloudflare
@@ -34,6 +34,9 @@ uses: [notifications]
 needs: []
 health: /healthz
 icon: icon.png
+switches:
+  contract: wizard.app-switches/1
+  path: /api/switches
 ---
 
 # Cloudflare
